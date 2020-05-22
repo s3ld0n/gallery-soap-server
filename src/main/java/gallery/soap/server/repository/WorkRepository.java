@@ -7,12 +7,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-@Component
+@Component(value = "courseRepository")
 public class WorkRepository {
 
-    private List<Work> repository = Arrays.asList(new Work(1, "Goal"),
-                                                  new Work(2, "Motivation"),
-                                                  new Work(3, "Courage"));
+    private List<Work> repository = Arrays.asList(new Work(1L, "Goal"),
+                                                  new Work(2L, "Motivation"),
+                                                  new Work(3L, "Courage"));
 
     public Work findWorkByTitle(String title) {
         return repository

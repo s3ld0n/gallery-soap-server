@@ -2,10 +2,10 @@ package gallery.soap.server.model;
 
 public class Work {
 
-    private long id;
+    private Long id;
     private String title;
 
-    public Work(int id, String title) {
+    public Work(Long id, String title) {
         this.id = id;
         this.title = title;
     }

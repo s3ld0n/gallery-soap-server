@@ -34,6 +34,22 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="updateWorkRequest">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="work" type="gss:work" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="updateWorkResponse">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="work" type="gss:work" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
     <xs:complexType name="work">
         <xs:all>
             <xs:element name="id" type="xs:long" />

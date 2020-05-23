@@ -11,6 +11,7 @@ import org.springframework.ws.transport.http.MessageDispatcherServlet;
 import org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition;
 import org.springframework.xml.xsd.SimpleXsdSchema;
 import org.springframework.xml.xsd.XsdSchema;
+import service.soap.gallery.ObjectFactory;
 
 @Configuration
 @EnableWs
@@ -36,5 +37,10 @@ public class WebServiceConfiguration extends WsConfigurerAdapter {
     @Bean
     public XsdSchema coursesSchema() {
         return new SimpleXsdSchema(new ClassPathResource("schema/works.xsd"));
+    }
+
+    @Bean
+    public ObjectFactory objectFactory() {
+        return new ObjectFactory();
     }
 }

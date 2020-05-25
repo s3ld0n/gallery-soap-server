@@ -1,0 +1,12 @@
+server:
+  port: 9090
+
+config:
+  url-mapping: /ws/*
+  wsdl:
+    port-type-name: Works
+    location-uri: /ws
+    target-namespace: http://gallery.soap.service
+  schema-path: schema/works.xsd
+  namespace-uri: http://gallery.soap.service
+
